@@ -1,4 +1,4 @@
-package com.brainacad.oop.teststokennizer;
+package com.brainacad.oop._2_9.teststokennizer;
 
 import java.util.StringTokenizer;
 

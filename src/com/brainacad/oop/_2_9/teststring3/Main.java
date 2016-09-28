@@ -1,12 +1,8 @@
-package com.brainacad.oop.teststring3;
+package com.brainacad.oop._2_9.teststring3;
 
 /**
  * Created by KrevSaa on 26.09.2016.
- * Create a class Main with a main() method.
- Create static method: uniqueChars(String s), which must  take a String as argument and return an array of distinct (unique) chars (char[]) of the given string.
- In method main() add code to invoke uniqueChars() method and pass string: “Using methods of class String” as argument. Print result to console.
- Execute the program.
-
+ *
  */
 public class Main {
     private static char[] uniqueChars(String s){
