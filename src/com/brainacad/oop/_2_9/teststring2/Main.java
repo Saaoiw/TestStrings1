@@ -12,7 +12,6 @@ public class Main {
         System.out.println("The string myStr2 din't contains the next chars:");
         for (int i = 0; i < myStr1.length(); i++) {
             if ( myStr2.indexOf(myStr1.charAt(i)) == -1 ) System.out.println(myStr1.charAt(i));
-
         }
     }
 }

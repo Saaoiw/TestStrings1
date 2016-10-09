@@ -49,7 +49,6 @@ public class Main {
             System.out.print("Some exception: " );
             outException();
         }
-
         finally {
             System.out.println("Some finally block");
         }
