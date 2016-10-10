@@ -1,5 +1,8 @@
 package com.brainacad.oop._2_15.testcollection;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Fujitsu on 08.10.2016.
  * Create class MyNumGenerator with two fields: numOfElm and maxNumb of int type,
@@ -24,19 +27,19 @@ public class TestMyGenerator {
         this.maxNumb = maxNumb;
     }
 
-    public int getNumOfElm() {
-        return numOfElm;
+    public List generate(){
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        for (int i = 0; i < numOfElm; i++) {
+            arrayList.add((int)(Math.random()  * (maxNumb - 0)));
+        }
+        return arrayList;
     }
+}
 
-    public void setNumOfElm(int numOfElm) {
-        this.numOfElm = numOfElm;
-    }
+class Main{
+    public static void main(String[] args) {
+        TestMyGenerator testMyGenerator = new TestMyGenerator(5, 64);
 
-    public int getMaxNumb() {
-        return maxNumb;
-    }
-
-    public void setMaxNumb(int maxNumb) {
-        this.maxNumb = maxNumb;
+        System.out.println(testMyGenerator.generate());
     }
 }
