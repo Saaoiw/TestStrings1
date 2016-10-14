@@ -1,7 +1,9 @@
 package com.brainacad.oop._2_15.testcollection;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by Fujitsu on 08.10.2016.
@@ -30,16 +32,28 @@ public class TestMyGenerator {
     public List generate(){
         ArrayList<Integer> arrayList = new ArrayList<>();
         for (int i = 0; i < numOfElm; i++) {
-            arrayList.add((int)(Math.random()  * (maxNumb - 0)));
+            arrayList.add((int)(Math.random()  * (maxNumb)));
         }
         return arrayList;
     }
+
+    public Set generateDistinct(){
+        Set<Integer> set = new HashSet<>();
+        for (int i = 0; i < numOfElm; i++) {
+             if (!set.add((int)(Math.random()  * (maxNumb)))) {
+                 i--;
+             }
+        }
+        return set;
+    }
+
 }
 
 class Main{
     public static void main(String[] args) {
-        TestMyGenerator testMyGenerator = new TestMyGenerator(5, 64);
+        TestMyGenerator testMyGenerator = new TestMyGenerator(5, 10);
 
         System.out.println(testMyGenerator.generate());
+        System.out.println(testMyGenerator.generateDistinct());
     }
 }

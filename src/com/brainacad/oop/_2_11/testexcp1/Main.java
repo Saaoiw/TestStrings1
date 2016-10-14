@@ -27,7 +27,7 @@ class MyException extends Exception{
     private static String myException;
 
     public MyException(String e){
-        myException = e;
+        super(e);
     }
 
     public static void outException(){
@@ -46,8 +46,8 @@ public class Main {
             throw new MyException("My Exception");
 
         } catch (Exception e) {
-            System.out.print("Some exception: " );
-            outException();
+            System.out.print("Some exception: " + e.getMessage());
+
         }
         finally {
             System.out.println("Some finally block");

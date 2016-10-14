@@ -36,8 +36,8 @@ public class Testcollection3 {
 
         printElements(arrayList);
     }
-    private static void printElements(Collection collection){
-        Iterator<String> iterator = collection.iterator();
+    private static <T> void printElements(Collection<T> collection){
+        Iterator<T> iterator = collection.iterator();
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
