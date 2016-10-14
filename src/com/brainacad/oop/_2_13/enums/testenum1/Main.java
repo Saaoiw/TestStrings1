@@ -8,17 +8,13 @@ public class Main {
     enum MyDayOfWeek {
         MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
 
-       /* public String nextDay(MyDayOfWeek day) {
+        public MyDayOfWeek nextDay() {
             //String nDay;
-            MyDayOfWeek myDayOfWeek[] = MyDayOfWeek.values();
-            for (int i = 0; i < myDayOfWeek.length; i++) {
-                if (myDayOfWeek[i] == day) {
-                    if (i + 1 == myDayOfWeek.length) {
-                        return myDayOfWeek[0].toString();
-                    } else return myDayOfWeek[i + 1].toString();
-                }
+            if (this.ordinal() == MyDayOfWeek.values().length - 1) {
+                return SUNDAY;
             }
-        }*/
+            else return MyDayOfWeek.values()[ordinal() + 1];
+        }
     }
 
 
@@ -34,6 +30,7 @@ public class Main {
                 case THURSDAY:
                 case SATURDAY:
                     System.out.println("My Java day: " + day);
+                    System.out.println(MyDayOfWeek.valueOf(day.toString()).nextDay()  );
                     break;
             }
 
