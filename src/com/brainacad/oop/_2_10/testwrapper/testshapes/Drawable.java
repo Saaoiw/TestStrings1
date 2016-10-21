@@ -1,4 +1,4 @@
-package com.brainacad.oop.testwrapper.testshapes;
+package com.brainacad.oop._2_10.testwrapper.testshapes;
 
 /**
  * Created by Таня on 20.09.2016.

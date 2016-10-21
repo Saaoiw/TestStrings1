@@ -1,4 +1,4 @@
-package com.brainacad.oop.testwrapper.testwrapper1;
+package com.brainacad.oop._2_10.testwrapper.testwrapper1;
 
 /**
  * Created by Fujitsu on 29.09.2016.
