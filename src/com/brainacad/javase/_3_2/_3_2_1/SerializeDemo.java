@@ -16,7 +16,7 @@ public class SerializeDemo {
         employee.setName("Ivan");
         employee.setNumber(123);
         employee.setSSN(1);
-        FileOutputStream fos = new FileOutputStream("C:\\Users\\Fujitsu\\IdeaProjects\\SerializeDemo.ser");
+        FileOutputStream fos = new FileOutputStream("D:\\SerializeDemo.ser");
         ObjectOutputStream oos = new ObjectOutputStream(fos);
 
         try {
